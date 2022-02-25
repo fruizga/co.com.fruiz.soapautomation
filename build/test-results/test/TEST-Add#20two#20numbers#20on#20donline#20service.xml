@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Add two numbers on donline service" tests="1" skipped="1" failures="0" errors="0" timestamp="2022-02-25T20:17:12" hostname="CHMEP91BZXF3" time="0.025">
+  <properties/>
+  <testcase name="Add two numbers" classname="Add two numbers on donline service" time="0.025">
+    <skipped/>
+  </testcase>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@6913bc24
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - TEST PENDING
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@2ba16c85
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - testFinished: Add two numbers:When you add two numbers
+| 2 | 4 |, Then I should see the response of the service is 200
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - TestOutcomes: [Add two numbers:When you add two numbers
+| 2 | 4 |, Then I should see the response of the service is 200]
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - Final testOutcomes: [Add two numbers:When you add two numbers
+| 2 | 4 |, Then I should see the response of the service is 200]
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - 
+          __  _____ _____ ____ _____   ____  _____ _   _ ____ ___ _   _  ____ 
+ _       / / |_   _| ____/ ___|_   _| |  _ \| ____| \ | |  _ \_ _| \ | |/ ___|
+(_)____ / /    | | |  _| \___ \ | |   | |_) |  _| |  \| | | | | ||  \| | |  _ 
+ |_____/ /     | | | |___ ___) || |   |  __/| |___| |\  | |_| | || |\  | |_| |
+(_)   /_/      |_| |_____|____/ |_|   |_|   |_____|_| \_|____/___|_| \_|\____|
+                                                                                
+
+TEST PENDING: Add two numbers
+---------------------------------------------------------------------------------
+]]></system-err>
+</testsuite>
