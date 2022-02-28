@@ -64,10 +64,7 @@
 <a href="#tab0">Tests</a>
 </li>
 <li>
-<a href="#tab1">Standard output</a>
-</li>
-<li>
-<a href="#tab2">Standard error</a>
+<a href="#tab1">Standard error</a>
 </li>
 </ul>
 <div id="tab0" class="tab">
@@ -83,42 +80,10 @@
 </table>
 </div>
 <div id="tab1" class="tab">
-<h2>Standard output</h2>
-<span class="code">
-<pre>REGISTER BASE STEP LISTENER net.thucydides.core.steps.BaseStepListener@78338dc7
-
-1 Scenarios (?[33m1 undefined?[0m)
-2 Steps (?[33m2 undefined?[0m)
-0m0,281s
-
-
-You can implement missing steps with the snippets below:
-
-
-@When(&quot;^you add two numbers$&quot;)
-public void youAddTwoNumbers(DataTable arg1) {
-    // Write code here that turns the phrase above into concrete actions
-    // For automatic transformation, change DataTable to one of
-    // List&lt;YourType&gt;, List&lt;List&lt;E&gt;&gt;, List&lt;Map&lt;K,V&gt;&gt; or Map&lt;K,V&gt;.
-    // E,K,V must be a scalar (String, Integer, Date, enum etc).
-    // Field names for YourType must match the column names in 
-    // your feature file (except for spaces and capitalization).
-    throw new PendingException();
-}
-
-@Then(&quot;^I should see the response of the service is (\\d+)$&quot;)
-public void iShouldSeeTheResponseOfTheServiceIs(int arg1) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new PendingException();
-}
-
-</pre>
-</span>
-</div>
-<div id="tab2" class="tab">
 <h2>Standard error</h2>
 <span class="code">
-<pre>[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - 
+<pre>[Test worker] INFO io.cucumber.core.plugin.SerenityReporter - Running feature from file:///C:/Users/fruiz/Documents/co.com.fruiz.soapautomation/src/test/resources/features/add_two_numbers.feature
+[Test worker] INFO  - 
 
 -------------------------------------------------------------------------------------
      _______. _______ .______       _______ .__   __.  __  .___________.____    ____ 
@@ -130,24 +95,109 @@ public void iShouldSeeTheResponseOfTheServiceIs(int arg1) {
                                                                                      
  News and tutorials at http://www.serenity-bdd.info                                  
  Documentation at https://wakaleo.gitbooks.io/the-serenity-book/content/             
- Join the Serenity Community on Rocket Chat at https://serenity-bdd.rocket.chat      
+ Join the Serenity Community on Gitter: https://gitter.im/serenity-bdd/serenity-core 
  Serenity BDD Support and Training at http://serenity-bdd.info/#/trainingandsupport  
- Learn Serenity BDD online at http://serenity-dojo.com                               
 -------------------------------------------------------------------------------------
 
-[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - Test Suite Started: Add two numbers on donline service
-[Test worker] WARN net.thucydides.core.steps.BaseStepListener - testStarted: Add two numbers/add-two-numbers-on-donline-service;add-two-numbers
-[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - 
- _____ _____ ____ _____   ____ _____  _    ____ _____ _____ ____  
-|_   _| ____/ ___|_   _| / ___|_   _|/ \  |  _ \_   _| ____|  _ \ 
-  | | |  _| \___ \ | |   \___ \ | | / _ \ | |_) || | |  _| | | | |
-  | | | |___ ___) || |    ___) || |/ ___ \|  _ &lt; | | | |___| |_| |
-  |_| |_____|____/ |_|   |____/ |_/_/   \_\_| \_\|_| |_____|____/ 
-                                                                  
-
-TEST STARTED: Add two numbers
--------------------------------------------------------------------(add-two-numbers-on-donline-service;add-two-numbers)
-[pool-2-thread-1] INFO net.thucydides.core.requirements.PackageRequirementsTagProvider - Loading requirements from package requirements at: net.thucydides.showcase.cucumber.junit
+[Test worker] INFO  - Test Suite Started: Add two numbers on donline service
+[Test worker] INFO io.cucumber.core.plugin.SerenityReporter - Running feature from file:///C:/Users/fruiz/Documents/co.com.fruiz.soapautomation/src/test/resources/features/add_two_numbers.feature
+[Test worker] INFO  - Test Suite Started: Add two numbers on donline service
+[pool-2-thread-1] WARN net.thucydides.core.requirements.RequirementsTagProvider - Failed to load requirements: null
+java.lang.NullPointerException
+	at net.thucydides.core.requirements.PackageRequirementsTagProvider.narrativePackagesIn(PackageRequirementsTagProvider.java:211)
+	at net.thucydides.core.requirements.PackageRequirementsTagProvider.findPackagesWithNarrativeAnnotationIn(PackageRequirementsTagProvider.java:206)
+	at net.thucydides.core.requirements.PackageRequirementsTagProvider.requirementPathsFromClassesInPackage(PackageRequirementsTagProvider.java:184)
+	at net.thucydides.core.requirements.PackageRequirementsTagProvider.requirementPathsStartingFrom(PackageRequirementsTagProvider.java:168)
+	at net.thucydides.core.requirements.PackageRequirementsTagProvider.requirementsReadFromClasspath(PackageRequirementsTagProvider.java:127)
+	at net.thucydides.core.requirements.PackageRequirementsTagProvider.fetchRequirements(PackageRequirementsTagProvider.java:111)
+	at net.thucydides.core.requirements.PackageRequirementsTagProvider.getRequirements(PackageRequirementsTagProvider.java:95)
+	at net.thucydides.core.requirements.RequirementsProvided.by(RequirementsProvided.java:17)
+	at net.thucydides.core.requirements.MultiSourceRequirementsService.getRequirements(MultiSourceRequirementsService.java:40)
+	at net.thucydides.core.requirements.BaseRequirementsService.getRequirementTypes(BaseRequirementsService.java:197)
+	at net.thucydides.core.reports.html.HtmlAcceptanceTestReporter.addTestOutcomeToContext(HtmlAcceptanceTestReporter.java:185)
+	at net.thucydides.core.reports.html.HtmlAcceptanceTestReporter.generateReportFor(HtmlAcceptanceTestReporter.java:103)
+	at net.thucydides.core.reports.ReportService.generateReportFor(ReportService.java:246)
+	at net.thucydides.core.reports.ReportService.lambda$generateReportsFor$0(ReportService.java:184)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:748)
+[pool-2-thread-1] WARN net.thucydides.core.requirements.RequirementsTagProvider - Failed to load requirements: null
+java.lang.NullPointerException
+	at net.thucydides.core.requirements.PackageRequirementsTagProvider.narrativePackagesIn(PackageRequirementsTagProvider.java:211)
+	at net.thucydides.core.requirements.PackageRequirementsTagProvider.findPackagesWithNarrativeAnnotationIn(PackageRequirementsTagProvider.java:206)
+	at net.thucydides.core.requirements.PackageRequirementsTagProvider.requirementPathsFromClassesInPackage(PackageRequirementsTagProvider.java:184)
+	at net.thucydides.core.requirements.PackageRequirementsTagProvider.requirementPathsStartingFrom(PackageRequirementsTagProvider.java:168)
+	at net.thucydides.core.requirements.PackageRequirementsTagProvider.requirementsReadFromClasspath(PackageRequirementsTagProvider.java:127)
+	at net.thucydides.core.requirements.PackageRequirementsTagProvider.fetchRequirements(PackageRequirementsTagProvider.java:111)
+	at net.thucydides.core.requirements.PackageRequirementsTagProvider.getRequirements(PackageRequirementsTagProvider.java:95)
+	at net.thucydides.core.requirements.PackageRequirementsTagProvider.getTestCaseRequirementOf(PackageRequirementsTagProvider.java:283)
+	at net.thucydides.core.requirements.PackageRequirementsTagProvider.getParentRequirementOf(PackageRequirementsTagProvider.java:279)
+	at net.thucydides.core.requirements.ParentRequirementsProvided.forOutcome(ParentRequirementsProvided.java:26)
+	at net.thucydides.core.requirements.BaseRequirementsService.getParentRequirementOf(BaseRequirementsService.java:138)
+	at net.thucydides.core.requirements.BaseRequirementsService.getParentRequirementFor(BaseRequirementsService.java:48)
+	at net.thucydides.core.reports.html.HtmlAcceptanceTestReporter.addParentRequirmentFieldToContext(HtmlAcceptanceTestReporter.java:193)
+	at net.thucydides.core.reports.html.HtmlAcceptanceTestReporter.addTestOutcomeToContext(HtmlAcceptanceTestReporter.java:187)
+	at net.thucydides.core.reports.html.HtmlAcceptanceTestReporter.generateReportFor(HtmlAcceptanceTestReporter.java:103)
+	at net.thucydides.core.reports.ReportService.generateReportFor(ReportService.java:246)
+	at net.thucydides.core.reports.ReportService.lambda$generateReportsFor$0(ReportService.java:184)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:748)
+[pool-2-thread-1] WARN net.thucydides.core.requirements.RequirementsTagProvider - Failed to load requirements: null
+java.lang.NullPointerException
+	at net.thucydides.core.requirements.PackageRequirementsTagProvider.narrativePackagesIn(PackageRequirementsTagProvider.java:211)
+	at net.thucydides.core.requirements.PackageRequirementsTagProvider.findPackagesWithNarrativeAnnotationIn(PackageRequirementsTagProvider.java:206)
+	at net.thucydides.core.requirements.PackageRequirementsTagProvider.requirementPathsFromClassesInPackage(PackageRequirementsTagProvider.java:184)
+	at net.thucydides.core.requirements.PackageRequirementsTagProvider.requirementPathsStartingFrom(PackageRequirementsTagProvider.java:168)
+	at net.thucydides.core.requirements.PackageRequirementsTagProvider.requirementsReadFromClasspath(PackageRequirementsTagProvider.java:127)
+	at net.thucydides.core.requirements.PackageRequirementsTagProvider.fetchRequirements(PackageRequirementsTagProvider.java:111)
+	at net.thucydides.core.requirements.PackageRequirementsTagProvider.getRequirements(PackageRequirementsTagProvider.java:95)
+	at net.thucydides.core.requirements.PackageRequirementsTagProvider.getTestCaseRequirementOf(PackageRequirementsTagProvider.java:283)
+	at net.thucydides.core.requirements.PackageRequirementsTagProvider.getParentRequirementOf(PackageRequirementsTagProvider.java:279)
+	at net.thucydides.core.requirements.ParentRequirementsProvided.forOutcome(ParentRequirementsProvided.java:26)
+	at net.thucydides.core.requirements.BaseRequirementsService.getParentRequirementOf(BaseRequirementsService.java:138)
+	at net.thucydides.core.requirements.BaseRequirementsService.getAncestorRequirementsFor(BaseRequirementsService.java:78)
+	at net.thucydides.core.reports.html.HtmlAcceptanceTestReporter.addBreadcrumbs(HtmlAcceptanceTestReporter.java:223)
+	at net.thucydides.core.reports.html.HtmlAcceptanceTestReporter.addParentRequirmentFieldToContext(HtmlAcceptanceTestReporter.java:211)
+	at net.thucydides.core.reports.html.HtmlAcceptanceTestReporter.addTestOutcomeToContext(HtmlAcceptanceTestReporter.java:187)
+	at net.thucydides.core.reports.html.HtmlAcceptanceTestReporter.generateReportFor(HtmlAcceptanceTestReporter.java:103)
+	at net.thucydides.core.reports.ReportService.generateReportFor(ReportService.java:246)
+	at net.thucydides.core.reports.ReportService.lambda$generateReportsFor$0(ReportService.java:184)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:748)
+[pool-2-thread-1] WARN net.thucydides.core.requirements.RequirementsTagProvider - Failed to load requirements: null
+java.lang.NullPointerException
+	at net.thucydides.core.requirements.PackageRequirementsTagProvider.narrativePackagesIn(PackageRequirementsTagProvider.java:211)
+	at net.thucydides.core.requirements.PackageRequirementsTagProvider.findPackagesWithNarrativeAnnotationIn(PackageRequirementsTagProvider.java:206)
+	at net.thucydides.core.requirements.PackageRequirementsTagProvider.requirementPathsFromClassesInPackage(PackageRequirementsTagProvider.java:184)
+	at net.thucydides.core.requirements.PackageRequirementsTagProvider.requirementPathsStartingFrom(PackageRequirementsTagProvider.java:168)
+	at net.thucydides.core.requirements.PackageRequirementsTagProvider.requirementsReadFromClasspath(PackageRequirementsTagProvider.java:127)
+	at net.thucydides.core.requirements.PackageRequirementsTagProvider.fetchRequirements(PackageRequirementsTagProvider.java:111)
+	at net.thucydides.core.requirements.PackageRequirementsTagProvider.getRequirements(PackageRequirementsTagProvider.java:95)
+	at net.thucydides.core.requirements.PackageRequirementsTagProvider.getTestCaseRequirementOf(PackageRequirementsTagProvider.java:283)
+	at net.thucydides.core.requirements.PackageRequirementsTagProvider.getParentRequirementOf(PackageRequirementsTagProvider.java:279)
+	at net.thucydides.core.requirements.ParentRequirementsProvided.forOutcome(ParentRequirementsProvided.java:26)
+	at net.thucydides.core.requirements.BaseRequirementsService.getParentRequirementOf(BaseRequirementsService.java:138)
+	at net.thucydides.core.requirements.BaseRequirementsService.getAncestorRequirementsFor(BaseRequirementsService.java:78)
+	at net.thucydides.core.tags.BreadcrumbTagFilter.getRequirementBreadcrumbsFrom(BreadcrumbTagFilter.java:51)
+	at net.thucydides.core.reports.html.HtmlAcceptanceTestReporter.addBreadcrumbs(HtmlAcceptanceTestReporter.java:224)
+	at net.thucydides.core.reports.html.HtmlAcceptanceTestReporter.addParentRequirmentFieldToContext(HtmlAcceptanceTestReporter.java:211)
+	at net.thucydides.core.reports.html.HtmlAcceptanceTestReporter.addTestOutcomeToContext(HtmlAcceptanceTestReporter.java:187)
+	at net.thucydides.core.reports.html.HtmlAcceptanceTestReporter.generateReportFor(HtmlAcceptanceTestReporter.java:103)
+	at net.thucydides.core.reports.ReportService.generateReportFor(ReportService.java:246)
+	at net.thucydides.core.reports.ReportService.lambda$generateReportsFor$0(ReportService.java:184)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:748)
 </pre>
 </span>
 </div>
@@ -159,7 +209,7 @@ TEST STARTED: Add two numbers
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 7.1</a> at 25/02/2022 03:17:13 PM</p>
+<a href="http://www.gradle.org">Gradle 7.1</a> at 28/02/2022 05:14:49 PM</p>
 </div>
 </div>
 </body>

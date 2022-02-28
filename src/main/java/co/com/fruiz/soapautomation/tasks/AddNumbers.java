@@ -4,12 +4,13 @@ import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.rest.interactions.Post;
 import java.util.List;
-import static net.serenitybdd.screenplay.Tasks.instrumented;
+
 import static co.com.fruiz.soapautomation.utils.enums.SoapService.ADD_NUMBERS;
+import static net.serenitybdd.screenplay.Tasks.instrumented;
 
 public class AddNumbers implements Task {
 
-    private List<String> values;
+    private final List<String> values;
 
     public AddNumbers(List<String> values){this.values=values;}
 

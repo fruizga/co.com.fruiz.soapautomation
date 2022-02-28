@@ -2,8 +2,8 @@ package co.com.fruiz.soapautomation.stepdefinitions;
 
 import co.com.fruiz.soapautomation.questions.LastResponseStatus;
 import co.com.fruiz.soapautomation.tasks.AddNumbers;
-import cucumber.api.java.en.Then;
-import cucumber.api.java.en.When;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
 
 import java.util.List;
 

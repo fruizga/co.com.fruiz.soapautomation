@@ -3,6 +3,5 @@ Feature: Add two numbers on donline service
 
   Scenario: Add two numbers
     When you add two numbers
-
-    | 2 | 4 |
+      |2|4|
     Then I should see the response of the service is 200

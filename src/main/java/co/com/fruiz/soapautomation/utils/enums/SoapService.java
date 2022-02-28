@@ -1,8 +1,8 @@
 package co.com.fruiz.soapautomation.utils.enums;
 
 public enum SoapService {
-    BASE_URL(uri:"http://www.dneonline.com/"),
-    ADD_NUMBERS(uri:"calculator.asmx");
+    BASE_URL("http://www.dneonline.com/"),
+    ADD_NUMBERS("calculator.asmx");
 
     private String uri;
 
